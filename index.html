@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estimator</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style media="screen">
+      h1 {
+        margin-bottom: 4rem;
+      }
+    </style>
+
+  </head>
+  <body>
+    <div class="container custom_container">
+      <div class="col-md-6 offset-3">
+        <h1>Estimator</h1>
+
+        <h2 class="estimated_value"></h2>
+
+        <form id="estimator_form" class="form">
+          <div class="form-group">
+            <label for="keywords">Keywords</label>
+            <select class="form-control" id="keywords" name="keyword" required>
+              <option>bollywood</option>
+              <option>hollwood</option>
+              <option>films</option>
+              <option>songs</option>
+            </select>
+            <small id="keyword_help" class="form-text text-muted">Select the keyowrd you want to search</small>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select class="form-control" id="country" name="country" required>
+              <option>america</option>
+              <option>brazil</option>
+              <option>canada</option>
+              <option>chile</option>
+              <option>england</option>
+              <option>india</option>
+              <option>japan</option>
+              <option>mexico</option>
+              <option>russia</option>
+              <option>turkey</option>
+            </select>
+            <small id="country_help" class="form-text text-muted">Select the country</small>
+          </div>
+          <div class="form-group">
+            <label for="category">Channel Category</label>
+            <select class="form-control" id="category" name="category" required>
+              <option>Celebrity Gossip Videos</option>
+              <option>Comedy / Sketch Videos</option>
+              <option>Educational Videos</option>
+              <option>Funny Animals</option>
+              <option>How to Guides and Tutorial</option>
+              <option>Parodies</option>
+              <option>Pranks</option>
+              <option>Product Reviews</option>
+              <option>Shopping Sprees / Hauls</option>
+              <option>Unboxing Videos</option>
+              <option>Video Game Walkthroughs</option>
+              <option>Vlogs</option>
+            </select>
+            <small id="category_help" class="form-text text-muted">Select the category</small>
+          </div>
+          <button type="submit" class="btn btn-primary" id="estimate_btn">Estimate</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js" charset="utf-8"></script>
+    <script src="js/scripts.js" charset="utf-8"></script>
+
+  </body>
+</html>
